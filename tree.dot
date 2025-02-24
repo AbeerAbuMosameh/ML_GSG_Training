@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<bedrooms &le; 3.5<br/>squared_error = 9256000000.0<br/>samples = 5<br/>value = 282000.0>, fillcolor="#f5cfb4"] ;
+1 [label=<bedrooms &le; 2.5<br/>squared_error = 822222222.222<br/>samples = 3<br/>value = 213333.333>, fillcolor="#fcefe7"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<size &le; 900.0<br/>squared_error = 225000000.0<br/>samples = 2<br/>value = 195000.0>, fillcolor="#fef8f4"] ;
+1 -> 2 ;
+3 [label=<squared_error = 0.0<br/>samples = 1<br/>value = 180000.0>, fillcolor="#ffffff"] ;
+2 -> 3 ;
+4 [label=<squared_error = 0.0<br/>samples = 1<br/>value = 210000.0>, fillcolor="#fcf1e9"] ;
+2 -> 4 ;
+5 [label=<squared_error = 0.0<br/>samples = 1<br/>value = 250000.0>, fillcolor="#f8decc"] ;
+1 -> 5 ;
+6 [label=<bedrooms &le; 4.5<br/>squared_error = 4225000000.0<br/>samples = 2<br/>value = 385000.0>, fillcolor="#eb9f69"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label=<squared_error = 0.0<br/>samples = 1<br/>value = 320000.0>, fillcolor="#f2be98"] ;
+6 -> 7 ;
+8 [label=<squared_error = 0.0<br/>samples = 1<br/>value = 450000.0>, fillcolor="#e58139"] ;
+6 -> 8 ;
+}
